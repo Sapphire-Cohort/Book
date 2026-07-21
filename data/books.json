@@ -1,0 +1,184 @@
+{
+    "books": [
+        {
+            "id": "1",
+            "title": "Uche",
+            "author": "Harper Lee",
+            "genre": "Fiction",
+            "year": 1960,
+            "available": true,
+            "cover_url": "https://books.google.com.ng/books/publisher/content?id=4bqEEQAAQBAJ&pg=PA6&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U27wyFbtWn_31RqxvIQKypKfNlvDw&w=1280"
+        },
+        {
+            "id": "2",
+            "title": "1984",
+            "author": "George Orwell",
+            "genre": "Dystopian",
+            "year": 1949,
+            "available": false,
+            "cover_url": "https://books.google.com.ng/books/content?id=ogBlw9LR7BsC&pg=PR2&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1_RddHg_FEf-mu5bzD9vdNdBBYoQ&w=1280"
+        },
+        {
+            "id": "3",
+            "title": "CSS: The Missing Manual",
+            "author": "David Sawyer McFarland",
+            "genre": "Classic",
+            "year": 2009,
+            "available": true,
+            "cover_url": "https://books.google.com.ng/books/content?id=l3dGJn3NydUC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2iSOat8vwwTsZqlN99EjAuE5hy-Q&w=1280"
+        },
+        {
+            "id": "4",
+            "title": "Mastering Integrated HTML and CSS",
+            "author": "Gabriel García Márquez",
+            "genre": "Magical Realism",
+            "year": 1997,
+            "available": true,
+            "cover_url": "https://books.google.com.ng/books/content?id=3A-SDZTWGIUC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1JW6HMrAxlMBfJdEdjNy3qNaAGLg&w=1280"
+        },
+        {
+            "id": "5",
+            "title": "A Beginner's Guide to JavaScript",
+            "author": "John Pollock",
+            "genre": "Science",
+            "year": 2009,
+            "available": true,
+            "cover_url": "https://books.google.com.ng/books/content?id=U69Hzz2jLPUC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2eAfkDPBAirPKpUjoFmfSCYp04Sw&w=1280"
+        },
+        {
+            "id": "6",
+            "title": "JavaScript: Visual QuickStart Guide",
+            "author": "Dori Smith, Tom Negrino",
+            "genre": "Fiction",
+            "year": 2014,
+            "available": false,
+            "cover_url": "https://books.google.com.ng/books/publisher/content?id=f2UHBAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2Xe-nXaMd0WDukcDHE9__1XBjhCg&w=1280"
+        },
+        {
+            "id": "7",
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "genre": "Fantasy",
+            "year": 1937,
+            "available": true,
+            "cover_url": "https://books.google.com.ng/books/publisher/content?id=w3euBAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1czjbi-siriViDNJzMUondeUMOsA&w=1280"
+        },
+        {
+            "id": "8",
+            "title": "Product Design",
+            "author": "Mike Baxter",
+            "genre": "Design",
+            "year": 1995,
+            "available": true,
+            "cover_url": "https://books.google.com.ng/books/content?id=2j6R1nMBL20C&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0zkxMeKm1pxao6vrOyJQax3ITBGQ&w=1280"
+        },
+        {
+            "id": "9",
+            "title": "Successful Product Management",
+            "author": "Klaus J. Aumayr ",
+            "genre": "History",
+            "year": 2023,
+            "available": true,
+            "cover_url": "https://books.google.com.ng/books/publisher/content?id=-MusEAAAQBAJ&pg=PR2&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2xD4noPwANeXJpiTBhEdXNXu9X6g&w=1280"
+        },
+        {
+            "id": "10",
+            "title": "Python Programming",
+            "author": " Dr.M Sirish Kumar, G.Radhika, A.Basi Reddy",
+            "genre": "Adventure",
+            "year": 2023,
+            "available": false,
+            "cover_url": "https://books.google.com.ng/books/publisher/content?id=zwm7EAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0flGPBenDgXrfBVrP62Buhkgg8sw&w=1280"
+        },
+        {
+            "id": "11",
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "genre": "Dystopian",
+            "year": 1932,
+            "available": true,
+            "cover_url": "https://unsplash.com"
+        },
+        {
+            "id": "12",
+            "title": "The Diary of a Young Girl",
+            "author": "Anne Frank",
+            "genre": "Biography",
+            "year": 1947,
+            "available": true,
+            "cover_url": "https://unsplash.com"
+        },
+        {
+            "id": "13",
+            "title": "Crime and Punishment",
+            "author": "Fyodor Dostoevsky",
+            "genre": "Psychological Fiction",
+            "year": 1866,
+            "available": false,
+            "cover_url": "https://unsplash.com"
+        },
+        {
+            "id": "14",
+            "title": "The Road",
+            "author": "Cormac McCarthy",
+            "genre": "Post-Apocalyptic",
+            "year": 2006,
+            "available": true,
+            "cover_url": "https://unsplash.com"
+        },
+        {
+            "id": "15",
+            "title": "Thinking, Fast and Slow",
+            "author": "Daniel Kahneman",
+            "genre": "Psychology",
+            "year": 2011,
+            "available": true,
+            "cover_url": "https://unsplash.com"
+        },
+        {
+            "id": "16",
+            "title": "The Catch-22",
+            "author": "Joseph Heller",
+            "genre": "Satire",
+            "year": 1961,
+            "available": true,
+            "cover_url": "https://unsplash.com"
+        },
+        {
+            "id": "17",
+            "title": "Dune",
+            "author": "Frank Herbert",
+            "genre": "Sci-Fi",
+            "year": 1965,
+            "available": false,
+            "cover_url": "https://unsplash.com"
+        },
+        {
+            "id": "18",
+            "title": "Frankenstein",
+            "author": "Mary Shelley",
+            "genre": "Gothic Horror",
+            "year": 1818,
+            "available": true,
+            "cover_url": "https://unsplash.com"
+        },
+        {
+            "id": "19",
+            "title": "The Silent Patient",
+            "author": "Alex Michaelides",
+            "genre": "Thriller",
+            "year": 2019,
+            "available": true,
+            "cover_url": "https://unsplash.com"
+        },
+        {
+            "id": "20",
+            "title": "Educated",
+            "author": "Tara Westover",
+            "genre": "Memoir",
+            "year": 2018,
+            "available": false,
+            "cover_url": "https://unsplash.com"
+        }
+    ]
+}
