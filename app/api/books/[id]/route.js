@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import booksData from "@/data/books.json"; // booksData is a variable i gave to the imported data from books.json file. So you can call yours whatever variable name you want.
+import booksData from "@/data/books.json";
+// booksData is a variable i gave to the imported data from books.json file. So you can call yours whatever variable name you want.
 
 /*
 Now go to your the page.jsx where you are doing your fetching. In my case, it is the store/[id]/page.jsx. Change fetch(`http://localhost:3000/books/${id}`) to fetch(`/api/books/${id}`)

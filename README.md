@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## BOOKSTORE APP
 
-## Getting Started
+In class we used json-server to mock our data whiich made it possible for to fetch from 
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```javascript
+ https://localhost:4000/books
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Vercel does not recognise json-server, meaning that our data is not going to be visible on our UI again. 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To make sure our data is being fetched correctly, we need to update our fetch logic. 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. First create the folder inside the app folder, name it **api**
+1. Inside the **api folder** create a file called route.js
+1. Copy and paste the code below in it
+    
+    ```javascipt
 
-## Learn More
+    import { NextResponse } from "next/server";
+    import booksData from "@/data/books.json"; 
+    // booksData is a variable i gave to the imported data from books.json file. So you can call yours whatever variable name you want.
 
-To learn more about Next.js, take a look at the following resources:
+    /*
+    Now go to your the page.jsx where you are doing your fetching. In my case, it is the store/[id]/page.jsx. Change fetch("http://localhost:3000/books") to fetch("/api/books")
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Once I did that, the data is being fetched successfully again. You do not need to start the for the mock data again. Just run your npm run dev and all should work fine
+    */
+    
+    export async function GET() {
+    return NextResponse.json(booksData.books);
+    }
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```
 
-## Deploy on Vercel
+4. Within the same folder, create another file. name it **[id]/route.js**
+1. Copy and paste the code below into it
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+import { NextResponse } from "next/server";
+import booksData from "@/data/books.json"; // booksData is a variable i gave to the imported data from books.json file. So you can call yours whatever variable name you want.
+
+/*
+Now go to your the page.jsx where you are doing your fetching. In my case, it is the store/[id]/page.jsx. Change fetch(`http://localhost:3000/books/${id}`) to fetch(`/api/books/${id}`)
+
+Once I did that, the data is being fetched successfully again. You do not need to start the for the mock data again. Just run your npm run dev and all should work fine
+*/
+
+export async function GET(request, { params }) {
+    const { id } = await params;
+
+    const book = booksData.books.find(
+        (book) => book.id === id
+    );
+
+    if (!book) {
+        return NextResponse.json(
+            { message: "Book not found" },
+            { status: 404 }
+        );
+    }
+
+    return NextResponse.json(book);
+}
+
+```
+
